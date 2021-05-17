@@ -20,3 +20,8 @@
 
 #### Will this repository be improved?
   Yes, the project will be updated with added features that allows you to capture your own image using the webcam to obtain the colours of an image from real-time.
+
+## OUTPUT
+<img width="900" alt="O1" src="https://user-images.githubusercontent.com/60001051/118470991-e1353b80-b724-11eb-9832-2d9c4c78a8fa.png">
+<img width="800" alt="O2" src="https://user-images.githubusercontent.com/60001051/118471033-ec886700-b724-11eb-81e9-d199a4d9cd52.png">
+<img width="800" alt="O3" src="https://user-images.githubusercontent.com/60001051/118471044-f01bee00-b724-11eb-8055-6350cf6a90c1.png">

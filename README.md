@@ -1,4 +1,4 @@
-# Colour-detection-using-opencv
+# Colour detection of the pixels in an image
 
 ## Imports: Pandas, OpenCV, copy, Numpy
 
@@ -17,3 +17,6 @@
   3. Obtaining RGB value of the pixel 
   4. Adding rectangle and text on the image using ``cv.rectangle(source,point1,point2,colour,thickness)`` and ``cv.putText(source,text,point,font,fontScale,colour,thickness,linetype)``
   5. On each click, the image was reset using the copy.deepcopy() method to erase the previous rectangle display
+
+#### Will this repository be improved?
+  Yes, the project will be updated with added features that allows you to capture your own image using the webcam to obtain the colours of an image from real-time.

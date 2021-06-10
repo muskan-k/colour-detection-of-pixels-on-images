@@ -8,7 +8,7 @@ image=cv.imread('bg.jpg')
 colnames=['colour','colour name','hex','r','g','b']
 df=pd.read_csv('colors.csv',names=colnames,header=None)
 
-#create a copy of the original image for resetting on each click
+#Create a copy of the original image for resetting on each click
 imagecopy=copy.deepcopy(image)
 
 click=False
@@ -30,7 +30,7 @@ cv.namedWindow('Image')
 def colorname(r,g,b):
     min=float('inf')
     for i in range(len(df)):
-        #iterate through each row in the dataset and calculate the min value of the RGB differences 
+        #Iterate through each row in the dataset and calculate the min value of the RGB differences 
         difference= abs(df.loc[i,'r']-r) + abs(df.loc[i,'g']-g)+abs(df.loc[i,'b']-b)
         if difference < min:
             min=difference
@@ -42,8 +42,8 @@ while True:
     cv.imshow('image',imagecopy)
     if click == True:
         name=colorname(r,g,b)
-         #if the click is on the right most area of the image, that would result 
-         #in the rectangle going out of the boundary of the image, hence tweaking the rectangle points
+         #If the click is on the right most area of the image, that would result 
+         #In the rectangle going out of the boundary of the image, hence tweaking the rectangle points
         if(xpos>0.75*image.shape[1]):
             xpos=xpos-400
           
@@ -54,7 +54,7 @@ while True:
             cv.putText(imagecopy, text,(xpos+10,ypos-10),2,0.5,(0,0,0),1,cv.LINE_AA)
         else:
             cv.putText(imagecopy,text,(xpos+10,ypos-10),2,0.5,(255,255,255),1,cv.LINE_AA)
-    #keep calling the function on mouse click until ESC is pressed       
+    #Keep calling the function on mouse click until ESC is pressed       
     cv.setMouseCallback('image',onClick)
     
     k= cv.waitKey(20) & 0xFF
